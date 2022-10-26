@@ -25,4 +25,4 @@ if __name__ == "__main__":
     app.run(
     debug = True,
     host = "0.0.0.0", # this defines that the application is to be run on the local machine only. Hence localhost
-    port = 3000) # this is the port number that the app runs on.
+    port = 3001) # this is the port number that the app runs on.
