@@ -6,11 +6,11 @@ def hello():
     return "Hello World!";
 
 @app.route("/mynetwork")
-def hello():
+def mynetwork():
     return "Hello mynetwork!";
 
 @app.route("/jobs")
-def hello():
+def jobs():
     return "Hello jobs!";
 
 
