@@ -5,6 +5,7 @@ from flask import Flask
 app = Flask(__name__)
 
 # this will define resources according to the route.
+#Flask will automatically call the fucntion
 @app.route("/")
 def hello():
     return "Hello World!";
@@ -23,9 +24,9 @@ def jobs():
 n=4
 @app.route("/pattern")
 def getPattern():
-    return n
     for i in range (n):
-    print('*' * n)
+        print("*" * n)
+    return " SQAURE PATTERN IS PRINTED ON THE TERMINAL"
 
 
 if __name__ == "__main__":
