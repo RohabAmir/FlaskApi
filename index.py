@@ -23,13 +23,12 @@ def jobs():
 n=4
 @app.route("/pattern")
 def getPattern():
-    return "Sqaure pattern is printed on the terminal"
-#     return n
-# for i in range (getPattern()):
-#     print('*' * getPattern())
+    return n
+    for i in range (getPattern()):
+    print('*' * getPattern())
 
 
 if __name__ == "__main__":
     app.run(
     host = "127.0.0.1", # this defines that the application is to be run on the local machine only. Hence localhost
-    port = 6000 ) # this is the port number that the app runs on.
+    port = 5002 ) # this is the port number that the app runs on.
