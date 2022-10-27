@@ -20,7 +20,15 @@ def mynetwork():
 def jobs():
     return "Hello jobs!";
 
-#
+n=4
+@app.route("/pattern")
+def getPattern():
+    return "Sqaure pattern is printed on the terminal"
+#     return n
+# for i in range (getPattern()):
+#     print('*' * getPattern())
+
+
 if __name__ == "__main__":
     app.run(
     debug = True,
