@@ -14,12 +14,39 @@ def hello():
 
 @app.route("/mynetwork")
 def mynetwork():
-    return "Hello mynetwork!";
+    if (user.name == "rohab")
+       result = searchInDatabase("rohab")
+       result = {
+        name:"rohab",
+        picture: "image.png",
+        about: "drtyfdfg",
+        noOfFollowers: "scdasdf",
+        password: '',
+        phoneNumber: '',
+        location: 
+       }
+    return result;
+
+
+@app.route("/post") # searched by => id = 1234
+def post():
+    result = searchInDatabase("1234")
+    result = {
+        user: "rohab",
+        picture: ["image.png", "image.png", "image.png"],
+        text: "drtyfdfg",
+        noOfLikes: 12,
+        noOfComments 123,
+    }
+    return result;
 
 # this will define resources according to the route.
 @app.route("/jobs")
 def jobs():
     return "Hello jobs!";
+
+return "ahmad"
+return "rohab"
 
 n=4
 @app.route("/pattern")
