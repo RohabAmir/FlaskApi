@@ -45,10 +45,10 @@ def hello():
 def jobs():
     return "Hello jobs!";
 
-@app.route("/home")
-def home():
-    """View for the Home page of the website."""
-    return "Welcome to the HomePage!"
+# @app.route("/home")
+# def home():
+#     """View for the Home page of the website."""
+#     return "Welcome to the HomePage!"
 
 
 
@@ -75,8 +75,25 @@ def show_square(number):
     return "Square of "+ str(number) +" is: "+ str(number * number) 
 
 
+"""1. Add a View Function for the Home page."""
+
+@app.route('/Home')
+def homePage():
+    return "Paws Rescue Center 🐾"
+
+"""2. Add a View Function for the About page."""
+
+@app.route('/About')
+def AboutPage():
+    return """We are a non-profit organization working as an animal rescue. We aim to help you connect with the purrfect furbaby for you! The animals you find on our website are rescued and rehabilitated animals. Our mission is to promote the ideology "adopt, don't hop"! """
+
+
+
+
+
 
 if __name__ == "__main__":
     app.run(
-    host = "127.0.0.1", # this defines that the application is to be run on the local machine only. Hence localhost
-    port = 5002 ) # this is the port number that the app runs on.
+    debug= True,
+    host = "0.0.0.0", # this defines that the application is to be run on the local machine only. Hence localhost
+    port = 3000 ) # this is the port number that the app runs on.
