@@ -1,5 +1,5 @@
 # import Flask 'module'
-from flask import Flask
+from flask import Flask, render_template
 
 # this will make a server application
 app = Flask(__name__)
@@ -8,7 +8,7 @@ app = Flask(__name__)
 #Flask will automatically call the fucntion
 @app.route("/")
 def hello():
-    return "Hello World!";
+    return render_template("home.html")
 
 # this will define resources according to the route.
 
