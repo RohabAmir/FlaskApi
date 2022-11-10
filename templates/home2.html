@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jinja2 Template</title>
+</head>
+<body>
+    <table style="width:100%; text-align: center;">
+    <tr>
+        <th>Name</th>
+        <th>Location</th>
+    </tr>    
+    {% for Name, Location in users.items() %}
+    {% if Location=="Sabzazar" %}
+
+    <tr>
+        <td>{{Name}}</td>
+        <td>{{Location}}</td>
+
+    </tr>
+    {% endif %}
+    {% endfor %}
+ </table>
+</body>
+</html>
