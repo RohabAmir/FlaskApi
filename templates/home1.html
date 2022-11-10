@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jinja2 Template</title>
+</head>
+<body>
+    <table style="width:100%; text-align: center;">
+    <tr>
+        <th>Sr#</th>
+        <th>Name</th>
+        <th>Location</th>
+    </tr>    
+    {% for Name, Location in users.items() %}
+    <tr>
+        <td>{{loop.index}}</td>
+        <td>{{Name}}</td>
+        <td>{{Location}}</td>
+
+    </tr>
+    {% endfor %}
+ </table>
+</body>
+</html>
